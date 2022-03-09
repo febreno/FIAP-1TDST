@@ -1,0 +1,31 @@
+Surface
+nao anonimato(pear to pear)
+disponivel a todos
+
+DeepWeb
+Anonimato
+mais dificil acesso
+documentos vazados, arquivos confidenciais
+
+DarkWeb
+Anonimato
+parte mais "profunda" da internet
+maior parte de coisas ilicitas
+
+Hidden Service
+nao monitoramento de trafego(endereco de origem do user oculto)
+
+TOR(The Onion Link)
+varios computadores conectados com camadas de criptografia "Onion"
+sampre tera o ip do pc anterior(pear to pear)
+se fizer torrent seu ip origem ficara visivel(sem anonimato)
+nao abrir pdfs
+
+DHT(Distribution Hash Tables)
+tabelas de hash distribuido
+
+PROXY
+usar para trocar um ip para acessar conteudos de outros paises
+
+VPN
+
