@@ -27,5 +27,29 @@ tabelas de hash distribuido
 PROXY
 usar para trocar um ip para acessar conteudos de outros paises
 
-VPN
+CRIPTOGRAFIA E VPNs(Virtual Privet Network)
 
+criptografia simetrica
+(receptor e emissor possue a chave da encriptacao)
+
+criptografia assimetrico
+(possue duas chaves pub e privada que sao combiandas e gerada uma chave unica)
+
+http
+vulneravel na seguranca
+
+https(secure)
+
+a vpn
+ocultar a localizacao
+ciberattack modificar localizacao
+cria uma coneccao entra sua maquina e a rede corporativa
+ISP(Internet service Provide)
+chave pub e priv, poassue criptografia
+
+LINUX
+gpg --generate-key
+gpg -e arquivo.txt
+gpg -d --decrypt arquivo.txt.gpg > arquivo2.txt
+
+intropia(dados aleatorios usados para encriptar no pc)
