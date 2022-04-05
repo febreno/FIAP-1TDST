@@ -1,16 +1,16 @@
-# # 1
+## 1
 print("\nHello World!")
 
-# # 2
+## 2
 name = input("\nwrite your name: ")
 print(name)
 
-# #3
+##3
 name = input("\nwrite your name: ")
 birth = int (input("write YEAR at you born: "))
 print("You have", 2022 - birth, "years old")
 
-# #4
+##4
 num1 = int (input("\nwrite your num1: "))
 num2 = int (input("write your num2: "))
 print(num1, "+", num2, "=", num1 + num2)
@@ -18,7 +18,7 @@ print(num1, ".", num2, "=", num1 * num2)
 print(num1, "/", num2, "=", num1 / num2)
 print(num1, "%", num2, "=", num1 % num2)
 
-# #5
+##5
 print("\nPOTENCE x²")
 num1 = int (input("write your num1: "))
 num2 = int (input("write your num2: "))
@@ -33,7 +33,7 @@ r = d / 2
 print("P = d.π = ", d * pi)
 print("A = π.r² = ", pi * r ** 2)
 
-#7
+##7
 # %.1f
 # "a = {:.2f}".format(num1)
 print("")
@@ -53,7 +53,7 @@ elif int(num1) < 100:
 else:
      print(num1, "is invalid")
 
-#7.1
+##7.1
 num = (input('Entre com um número de 0 a 9999: '))
 n = str(num)
 
@@ -65,7 +65,7 @@ print("\nUnidade: {}"
     .format(n[3], n[2], n[1], n[0]) 
 )
 
-# #7.2
+##7.2
 num = int(input('Informe Um Número: '))
 u = num // 1 % 10 
 d = num // 10 % 10 
@@ -79,7 +79,7 @@ print('Unidade {}:'
 '\nMilhar: {}'
 .format(u, d, c, m))
 
-#7.3
+##7.3
 getNum = input("write an int number")
 num = int(getNum)
 rest = num % 2
@@ -88,14 +88,14 @@ if rest == 0:
 else:
     print(num, "is odd")
 
-#8
+##8
 print("\nCLOTHING POSSIBILITIES")
 tshirt = int(input("number of tshirt: "))
 trousers = int(input("number of trousers: "))
 shoes = int(input("number of shoes: "))
 print("the possibilities are: ", tshirt*trousers*shoes)
 
-#9
+##9
 print("\nDISCOUNT PERCENTAGE")
 p = int(input("the product price: "))
 d = int(input("the discount: "))
@@ -103,13 +103,13 @@ result = -p/100*d + p
 print("DICOUNT > price/100 * discount: ", p/100*d)
 print("Final price: ", result)
 
-#10
+##10
 print("\nAVERAGE SPEED: VM=D/T")
 d = int(input("number of distance: "))
 t = int(input("number of time: "))
 print("R:", d*t)
 
-#11
+##11
 print("\nPAYMENT PERCENTAGE")
 print("*Payment1 < Payment2*")
 p1 = int(input("Payment1: "))
@@ -120,7 +120,7 @@ if calc > 0:
 else:
     print("PERCENTAGE DOWN: ", calc,"%")
 
-#12
+##12
 rm = int(input("RM: "))
 n1 = rm % 10
 nr1 = rm // 10
@@ -140,7 +140,7 @@ nr5 = rm // 10
 plus = n1 + n2 + n3 + n4 + n5
 print("Plus: ", plus)
 
-#13
+##13
 print("\n CALC AVERAGE TEST")
 print("NAC pesa 2, AM pesa 3, PS pesa 5")
 nac = int(input("NAC: "))
@@ -149,7 +149,7 @@ ps = int(input("PS: "))
 average = (2*nac + 3*am + 5*ps)/10
 print("average:", average)
 
-#14
+##14
 print("\nIPTU cash-20% or installments 10x")
 print("You need to pay 5.000, sorry :(")
 print("cash or installments?")
