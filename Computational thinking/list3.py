@@ -1,4 +1,4 @@
-# 1
+## 1
 print("\n > or <")
 num1 = int(input("\n type an num:"))
 if num1 > 10:
@@ -6,7 +6,7 @@ if num1 > 10:
 else:
     print(num1, "< 10")
 
-#2
+## 2
 print("\n > or <")
 num1 = int(input("type an num 1: "))
 num2 = int(input("type an num 2: "))
@@ -17,7 +17,7 @@ elif num1 < num2:
 elif num1 == num2:
     print("num1 < num2")
 
-#3
+## 3
 print("\nTEAMS")
 tname1 = input("type first team name: ")
 goals1 = int(input("goals first team: "))
@@ -31,7 +31,7 @@ elif goals1 < goals2:
 elif goals1 == goals2:
     print("tie")
 
-#4
+## 4
 print("\nWORKER")
 print("max is 8h of work")
 print("8h+1h = +50% of salary")
@@ -52,7 +52,7 @@ else:
     print("Something is wrong!")
     print("workingHours >= 24days ?")
 
-#4.1
+## 4.1
 dias_uteis = int(input("Dias úteis: "))
 horas_trab = int(input("Horas trabalhadas: "))
 valor_hora = float(input("Valor hora: "))
@@ -69,7 +69,7 @@ print("Vou receber {:.2f}".format(salario))
 if hora_extra > 0:
     print("Recebi de hora-extra {:.2f}".format(hora_extra))
 
-#5
+## 5
 print("\nIS 'A' DIVISIBLE BY 'B'?")
 a = float(input("A Value: "))
 b = float(input("B Value: "))
@@ -79,7 +79,7 @@ if calc % 2 == 0 and calc % 5 == 0 :
 else:
     print(calc, "isn't divisible")
 
-#7
+## 7
 idade = int(input("Idade: "))
 
 if idade < 5:
@@ -95,7 +95,7 @@ elif idade <= 30:
 else:
     print("Sênior")
 
-#9
+## 9
 import math
 
 a = float(input("A: "))
@@ -113,7 +113,7 @@ if a != 0:
 else:
     print("Não é equação de 2º grau")
 
-#10
+## 10
 preco = float(input("Preço: "))
 
 condicao = int(input("Informe condição de pagto: "))
@@ -135,7 +135,7 @@ else:
     pgto = preco + preco * 0.07;
     print("4x de {:.2f}".format(pgto / 4))    
 
-#12 13
+## 12 13
 dia = int(input("Dia: "))
 mes = int(input("Mês: "))
 ano = int(input("Ano: "))
