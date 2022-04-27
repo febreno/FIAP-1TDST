@@ -1,0 +1,6 @@
+#### install node
+- node-red (get link)
+
+#### install inside node-red
+- node-red-node-watson
+- node-red-contrib-telegrambot
