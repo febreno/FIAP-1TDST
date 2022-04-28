@@ -2,10 +2,15 @@
 ADS - Analise e desenvolvimento de sistemas
 <br/>
 ##PROVAS
+<br/>
 DATABASE 30/05 - 10/06
+<br/>
 CHATBOT
+<br/>
 COMPUTIONAL
+<br/>
 WEB
+<br/>
 EXPERIENCE
 <br/>
 AI E CHATBOT(ibm)
