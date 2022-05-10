@@ -1,3 +1,4 @@
+#### initi
 - install node
 - open cmd
 - node-red (get link)
