@@ -1,6 +1,8 @@
 #### initi
 - install node
-- open cmd
+- - open cmd
+- node -v
+- npm install -g --unsafe-perm node-red
 - node-red (get link)
 
 #### install inside node-red
