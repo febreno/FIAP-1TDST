@@ -1,7 +1,7 @@
 # FIAP
 ADS - Analise e desenvolvimento de sistemas
 <br/>
-## PROVAS
+## AULAS
 AI E CHATBOT(ibm)
 - Miguel Bozer
 </br>
