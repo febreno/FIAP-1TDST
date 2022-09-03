@@ -2,7 +2,7 @@
 ADS - Analise e desenvolvimento de sistemas
 <br/>
 ## AULAS
-AI E CHATBOT(ibm)
+AI E CHATBOT(Inteligencia Artificial)
 - Miguel Bozer
 </br>
 
@@ -22,5 +22,5 @@ RESPONSIVE WEB DEVELOPMENT(html,css,js)
 - Renato Bortolin
 <br/>
 
-SOFTWARE DESIGN & TOTAL EXPERIENCE(carrer)
+SOFTWARE DESIGN & TOTAL EXPERIENCE(carrer,groups, methodologies)
 - Junior Freitas
