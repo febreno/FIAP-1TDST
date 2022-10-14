@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --base: #9e9898;/*#9e9898*/
+    --secondary: #dfdfdf;
+}
+body{
+    /* font-family: ; */
+    background-color: whitesmoke;
+    /* height: 100vh; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.align:nth-child(n){
+    margin: 10px;
+}
+html{
+    font-family: monospace;
+}
+.logo {
+    width: 120px;
+    text-align: center;
+}
+.bgLogo {
+  color: white;
+  border: 0;
+  cursor: pointer;
+  padding: 4px 4px;
+  border-radius: 5px;
+  background: radial-gradient(circle, rgba(251,63,63,1) 0%, rgba(70,129,252,1) 100%);
+  /* background: radial-gradient(circle, rgba(251,63,63,1) 0%, rgba(65,222,44,1) 49%, rgba(91,95,201,1) 71%, rgba(214,61,103,1) 100%); */
+  background-size: 500%;
+  animation: neon 7s infinite alternate;
+}
+.bgLogo p{
+    font-size: 20px;
+    margin: 0;
+    background: #ffffff4f;
+    padding: 10px;
+    border-radius: 5px;
+}
+@keyframes neon {
+  0% {background-position: left}
+  100% {background-position: right}
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* btn hoverme */
+.btn{
+    border: 0;
+    color: #ffffff;
+    background-color: #363837;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: Uppercase;
+    position: relative;
+    cursor: pointer;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 10%;
+    height: 25%;
+    background-color: transparent;
+    border-top: 1px solid #363837;
+    border-left: 1px solid #363837;
+    overflow: hidden;
+    transition: .3s ease;
+}
+.btn::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 10%;
+    height: 25%;
+    background-color: transparent;
+    border-bottom: 1px solid #363837;
+    border-right: 1px solid #363837;
+    transition: .3s ease;
+}
+.btn:hover::before{
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+}
+.btn:hover::after{
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+}
