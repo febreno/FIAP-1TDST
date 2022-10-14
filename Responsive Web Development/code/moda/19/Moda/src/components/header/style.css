@@ -1,0 +1,21 @@
+.menu{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 10px;
+    align-items: center;
+}
+nav{
+    display: flex;
+    float: right;
+}
+nav a{
+    /* margin: 0 0 0 25px; */
+    font-size: 20px;
+    /* color: var(--base); */
+    padding: 0 20px;
+    text-decoration: none;
+}
+nav a:hover, nav a:focus{
+    background-color: #ebebebad;
+    border-radius: 5px;
+}

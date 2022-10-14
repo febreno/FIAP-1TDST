@@ -1,0 +1,26 @@
+.logo {
+    width: 120px;
+    text-align: center;
+}
+.bgLogo {
+  color: white;
+  border: 0;
+  cursor: pointer;
+  padding: 4px 4px;
+  border-radius: 5px;
+  background: linear-gradient(63deg, #fc5555 0%, #ff5c80 50%, #910e2afd 100%);
+  /* background: linear-gradient(63deg, #3f5efb 0%, #ff5c80fd 50%, #4545fc 100%); */
+  background-size: 800%;
+  animation: neon 7s infinite alternate;
+}
+.bgLogo p{
+    font-size: 20px;
+    margin: 0;
+    background: #ffffff4f;
+    padding: 10px;
+    border-radius: 5px;
+}
+@keyframes neon {
+  0% {background-position: left}
+  100% {background-position: right}
+}

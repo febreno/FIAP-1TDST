@@ -1,0 +1,14 @@
+:root{
+    --base: #9e9898;/*#9e9898*/
+    --secondary: #dfdfdf;
+}
+html{
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,33 @@
+.banner img{
+    width: 30vw;
+    transition: .2s;
+    cursor: pointer;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+.banner img:hover, .card img:hover{
+    cursor: pointer;
+    transition: .4s;
+    margin: -10px 0 10px 0;
+    filter: drop-shadow(0.35rem 0.35rem 2.0rem rgba(0, 0, 0, 0.5));
+    
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.cards img{
+    width: 150px;
+    height: 250px;
+    transition: .4s;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card p{
+    margin: 0;
+    width: 150px;
+}
