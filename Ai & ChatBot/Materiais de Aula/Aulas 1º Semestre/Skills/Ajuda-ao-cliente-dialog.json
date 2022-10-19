@@ -1,0 +1,569 @@
+{
+  "intents": [
+    {
+      "intent": "agradecimento",
+      "examples": [
+        {
+          "text": "Legal, valeu!"
+        },
+        {
+          "text": "Muito obrigado senhor bot"
+        },
+        {
+          "text": "Obrigado pela ajuda"
+        },
+        {
+          "text": "show robô, obrigado"
+        },
+        {
+          "text": "tamo junto"
+        },
+        {
+          "text": "Valeu bot, você ajudou demais"
+        },
+        {
+          "text": "Você me ajudou, obrigado"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "compra_produtos",
+      "examples": [
+        {
+          "text": "Eu queria ajuda para comprar um celular"
+        },
+        {
+          "text": "Gostaria de comprar um smartwatch, pode me ajudar?"
+        },
+        {
+          "text": "Me ajude a comprar um tablet"
+        },
+        {
+          "text": "Qual o melhor smartwatch para usar na academia?"
+        },
+        {
+          "text": "Quero comprar um celular"
+        },
+        {
+          "text": "Você pode me ajudar numa compra de celular?"
+        },
+        {
+          "text": "Vocês vendem celulares?"
+        }
+      ],
+      "description": "Intenção para detectar quando o usuário deseja comprar algo no site"
+    },
+    {
+      "intent": "entrega_produtos",
+      "examples": [
+        {
+          "text": "Cadê meu pedido?"
+        },
+        {
+          "text": "Onde está o meu produto?"
+        },
+        {
+          "text": "Qual o prazo de entrega?"
+        },
+        {
+          "text": "Qual o prazo para receber a minha aquisição"
+        },
+        {
+          "text": "Quando vai chegar o meu pedido?"
+        },
+        {
+          "text": "Quanto tempo para chegar a minha compra?"
+        },
+        {
+          "text": "Que dia vai chegar a minha compra?"
+        }
+      ],
+      "description": "Intenção para detectar quando o usuário quer informações sobre o prazo de entrega"
+    },
+    {
+      "intent": "reserva_produtos",
+      "examples": [
+        {
+          "text": "Adicionei um produto ao meu carrinho de compras e gostaria se ele irá ficar reservado?"
+        },
+        {
+          "text": "Ao adicionar o produto na sacola de compras, por quanto tempo ele ficará reservado?"
+        },
+        {
+          "text": "Ao colocar um produto no carrinho de compras, ele fica reservado?"
+        },
+        {
+          "text": "Coloquei produtos no carrinho, eles ficarão resevados?"
+        },
+        {
+          "text": "Por quanto tempo meu produto ficará reservado no carrinho de compras"
+        },
+        {
+          "text": "Posso reservar produtos colocando-os no carrinho de compras?"
+        },
+        {
+          "text": "Tenho uma reserva de produto quando coloco ele no carrinho?"
+        }
+      ],
+      "description": "Ajudar os clientes a compreender a forma de funcionamento da reserva dos produtos no site"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "cidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "rio de janeiro",
+          "synonyms": [
+            "carioca",
+            "cidade maravilhosa",
+            "rj"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "salvador",
+          "synonyms": [
+            "soteropolitano"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "são paulo",
+          "synonyms": [
+            "paulista",
+            "sampa",
+            "sp",
+            "terra da garoa"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "marca",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "apple",
+          "synonyms": [
+            "ios",
+            "iphone"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cce",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dell",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "lenovo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "lg",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "motorola",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "multilaser",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "positivo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "samsung",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "xiaomi",
+          "synonyms": [
+            "redmi"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sim-nao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "nao",
+          "synonyms": [
+            "n",
+            "nao quero",
+            "negativo",
+            "nem",
+            "sqn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "blz",
+            "claro",
+            "de acordo",
+            "ok",
+            "ss",
+            "yeap",
+            "yes"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Como posso te ajudar?"
+              },
+              {
+                "text": "Olá, boa noite."
+              },
+              {
+                "text": "Olá, tudo bem?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "digress_in": "does_not_return",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_1_1649207901585",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Prazo de entrega e cidade",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_6_1648603367929"
+      },
+      "conditions": "#entrega_produtos && @cidade",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1648605474577",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Produto adicionado ao carrinho de compras."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1649206482070",
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_1_1649207155443"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Valeu cara, você é fera"
+              },
+              {
+                "text": "De nada"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#agradecimento",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1649207901585",
+      "previous_sibling": "node_3_1649205690583"
+    },
+    {
+      "type": "standard",
+      "title": "Outras cidades",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Garantimos um prazo de 30 dias úteis para a sua cidade"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1648601804039",
+      "conditions": "true",
+      "dialog_node": "node_2_1648604713553",
+      "previous_sibling": "node_5_1648603632467"
+    },
+    {
+      "type": "standard",
+      "title": "Compra de Produtos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal vou te ajudar, para isso vou lhe fazer algumas perguntas. Tudo bem?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#compra_produtos",
+      "dialog_node": "node_3_1649205690583",
+      "previous_sibling": "node_6_1647395200393"
+    },
+    {
+      "type": "standard",
+      "title": "sim",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você tem preferência por alguma marca?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1649205690583",
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_3_1649206063231"
+    },
+    {
+      "type": "standard",
+      "title": "marca",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você tem algum valor máximo que você deseja gastar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1649206063231",
+      "context": {
+        "marca_escolhida": "@marca.literal"
+      },
+      "conditions": "@marca",
+      "dialog_node": "node_3_1649206324685"
+    },
+    {
+      "type": "standard",
+      "title": "Rio de Janeiro ou Salvador",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para @cidade o prazo de entrega é de 20 dias úteis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1648601804039",
+      "conditions": "@cidade:(rio de janeiro) || @cidade:salvador",
+      "dialog_node": "node_5_1648603632467",
+      "previous_sibling": "node_6_1648603367929"
+    },
+    {
+      "type": "standard",
+      "title": "Reserva de Produtos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não. O produto só fica reservado quando a compra for finalizada."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#reserva_produtos",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1647395200393",
+      "previous_sibling": "node_8_1648601804039"
+    },
+    {
+      "type": "standard",
+      "title": "São Paulo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O prazo de entrega para a cidade de São Paulo é de 15 dias."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1648601804039",
+      "conditions": "@cidade:(são paulo)",
+      "dialog_node": "node_6_1648603367929"
+    },
+    {
+      "type": "standard",
+      "title": "valor monetario",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu tenho um celular da $marca_escolhida que é de até @sys-currency.literal. Gostaria de adicioná-lo ao seu carrinho de compras?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1649206324685",
+      "conditions": "@sys-currency",
+      "dialog_node": "node_7_1649206482070"
+    },
+    {
+      "type": "standard",
+      "title": "Prazo de entrega",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Garantimos um prazo máximo de 30 dias úteis para a entrega do seu produto. Entretanto, esse prazo pode variar. Qual a sua localização?"
+              },
+              {
+                "text": "Qual a sua localização?"
+              },
+              {
+                "text": "Para qual cidade iremos entregar o seu produto?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#entrega_produtos",
+      "dialog_node": "node_8_1648601804039",
+      "previous_sibling": "node_10_1648605474577"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Ajuda ao cliente",
+  "language": "pt-br",
+  "description": "Ajuda ao cliente com os problemas mais recorrentes do site"
+}
