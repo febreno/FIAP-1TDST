@@ -24,6 +24,8 @@ body{
 html{
     font-family: monospace;
 }
+
+/* btn logo */
 .logo {
     width: 120px;
     text-align: center;
@@ -101,4 +103,20 @@ html{
 .btn:hover::after{
     width: calc(100% + 10px);
     height: calc(100% + 10px);
+}
+
+/* btn-border */
+.btn-border{
+    padding: 15px;
+    border-radius: 10px;
+    transition: .2s;
+    cursor: pointer;
+    background-color: transparent;
+    color: #363837;
+    border: 2px solid #363837;
+}
+.btn-border:hover{
+    background-color: #363837;
+    color: #ffffff;
+    border: 2px solid transparent;
 }
