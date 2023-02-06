@@ -3,7 +3,7 @@ ADS - Analise e desenvolvimento de sistemas
 <br/>
 ## AULAS
 AI E CHATBOT(Inteligencia Artificial)
-- Miguel Bozer
+- Miguel Bozer da Silva
 </br>
 
 BUILDING RELATIONAL DATABASE(oracle)
@@ -11,11 +11,11 @@ BUILDING RELATIONAL DATABASE(oracle)
 </br>
 
 COMPUTIONAL THINKING(python)
-- Eduardo Gondo
+- Eduardo Kazuaki Gondo
 <br/>
 
 DOMAIN DRIVE DESIGN(java)
-- Fernando Luiz, Ana luiza, Rafael Ronqui
+-Fernando Luiz de Almeida, Ana luiza, Rafael Ronqui
 <br/>
 
 RESPONSIVE WEB DEVELOPMENT(html,css,js)
