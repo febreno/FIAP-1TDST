@@ -1,0 +1,235 @@
+CREATE TABLE atributos_nome (
+    cod_atributo  NUMBER(5) NOT NULL,
+    nome_atributo VARCHAR2(30) NOT NULL
+);
+
+ALTER TABLE atributos_nome ADD CONSTRAINT atributos_nome_pk PRIMARY KEY ( cod_atributo );
+
+CREATE TABLE bairro (
+    cod_bairro        NUMBER(5) NOT NULL,
+    nom_bairro        VARCHAR2(40 CHAR) NOT NULL,
+    cidade_cod_cidade NUMBER(4) NOT NULL
+);
+
+ALTER TABLE bairro ADD CONSTRAINT bairro_pk PRIMARY KEY ( cod_bairro );
+
+CREATE TABLE candidato (
+    id_candidato      NUMBER(9) NOT NULL,
+    nome              VARCHAR2(20) NOT NULL,
+    sobrenome         VARCHAR2(60),
+    dt_nascimento     DATE NOT NULL,
+    nm_reservista     VARCHAR2(30 CHAR),
+    rg                VARCHAR2(12 CHAR) NOT NULL,
+    cpf               VARCHAR2(15 CHAR) NOT NULL,
+    pessoa_cod_pessoa NUMBER(9) NOT NULL,
+    estado_civil      VARCHAR2(10) NOT NULL,
+    idade             NUMBER(3) NOT NULL
+);
+
+CREATE UNIQUE INDEX candidato__idx ON
+    candidato (
+        pessoa_cod_pessoa
+    ASC );
+
+ALTER TABLE candidato ADD CONSTRAINT candidato_pk PRIMARY KEY ( id_candidato );
+
+CREATE TABLE candidato_atributos (
+    id_atributo                 NUMBER(9) NOT NULL,
+    candidato_id_candidato      NUMBER(9) NOT NULL,
+    atributos_nome_cod_atributo NUMBER(5) NOT NULL
+);
+
+ALTER TABLE candidato_atributos ADD CONSTRAINT candidato_atributos_pk PRIMARY KEY ( id_atributo );
+
+CREATE TABLE cidade (
+    cod_cidade    NUMBER(4) NOT NULL,
+    nom_cidade    VARCHAR2(30 CHAR) NOT NULL,
+    estado_cod_uf NUMBER(2) NOT NULL
+);
+
+ALTER TABLE cidade ADD CONSTRAINT cidade_pk PRIMARY KEY ( cod_cidade );
+
+CREATE TABLE cnpj (
+    cod_cnpj            NUMBER(9) NOT NULL,
+    cnpj                VARCHAR2(20) NOT NULL,
+    empresa_cod_empresa NUMBER(9) NOT NULL
+);
+
+ALTER TABLE cnpj ADD CONSTRAINT cnpj_pk PRIMARY KEY ( cod_cnpj );
+
+CREATE TABLE empresa (
+    cod_empresa       NUMBER(9) NOT NULL,
+    razao_social      VARCHAR2(70 CHAR) NOT NULL,
+    nome_fantasia     VARCHAR2(70 CHAR) NOT NULL,
+    data_fundacao     DATE NOT NULL,
+    website           VARCHAR2(99 CHAR),
+    pessoa_cod_pessoa NUMBER(9) NOT NULL
+);
+
+CREATE UNIQUE INDEX empresa__idx ON
+    empresa (
+        pessoa_cod_pessoa
+    ASC );
+
+ALTER TABLE empresa ADD CONSTRAINT empresa_pk PRIMARY KEY ( cod_empresa );
+
+CREATE TABLE estado (
+    cod_uf             NUMBER(2) NOT NULL,
+    unidade_federativa VARCHAR2(22 CHAR) NOT NULL,
+    uf                 VARCHAR2(2 CHAR) NOT NULL
+);
+
+ALTER TABLE estado ADD CONSTRAINT estado_pk PRIMARY KEY ( cod_uf );
+
+CREATE TABLE pessoa (
+    cod_pessoa  NUMBER(9) NOT NULL,
+    tipo_pessoa VARCHAR2(15 CHAR) NOT NULL
+);
+
+ALTER TABLE pessoa ADD CONSTRAINT pessoa_pk PRIMARY KEY ( cod_pessoa );
+
+CREATE TABLE pessoa_email (
+    cod_email         NUMBER(9) NOT NULL,
+    email             VARCHAR2(60 CHAR) NOT NULL,
+    pessoa_cod_pessoa NUMBER(9) NOT NULL
+);
+
+ALTER TABLE pessoa_email ADD CONSTRAINT pessoa_email_pk PRIMARY KEY ( cod_email );
+
+CREATE TABLE pessoa_endereco (
+    cod_endereco      NUMBER(9) NOT NULL,
+    bairro_cod_bairro NUMBER(5) NOT NULL,
+    pessoa_cod_pessoa NUMBER(9) NOT NULL,
+    cep               VARCHAR2(10 CHAR) NOT NULL,
+    rua               VARCHAR2(30) NOT NULL,
+    numero            NUMBER(5) NOT NULL,
+    complemento       VARCHAR2(20)
+);
+
+ALTER TABLE pessoa_endereco ADD CONSTRAINT pessoa_endereco_pk PRIMARY KEY ( cod_endereco );
+
+CREATE TABLE pessoa_telefone (
+    cod_telefone      NUMBER(9) NOT NULL,
+    nm_telefone       VARCHAR2(20) NOT NULL,
+    pessoa_cod_pessoa NUMBER(9) NOT NULL
+);
+
+ALTER TABLE pessoa_telefone ADD CONSTRAINT pessoa_telefone_pk PRIMARY KEY ( cod_telefone );
+
+CREATE TABLE pessoa_vaga (
+    pessoa_cod_pessoa NUMBER(9) NOT NULL,
+    vaga_id_vaga      NUMBER(9) NOT NULL
+);
+
+ALTER TABLE pessoa_vaga ADD CONSTRAINT vaga_pessoa_pk PRIMARY KEY ( pessoa_cod_pessoa,
+                                                                    vaga_id_vaga );
+
+CREATE TABLE recrutador (
+    pessoa_cod_pessoa NUMBER(9) NOT NULL,
+    cod_recrutador    NUMBER(9) NOT NULL,
+    cpf               VARCHAR2(15) NOT NULL,
+    nome              VARCHAR2(20) NOT NULL
+);
+
+CREATE UNIQUE INDEX recrutador__idx ON
+    recrutador (
+        pessoa_cod_pessoa
+    ASC );
+
+ALTER TABLE recrutador ADD CONSTRAINT recrutador_pk PRIMARY KEY ( cod_recrutador );
+
+CREATE TABLE usuario (
+    id_usuario        NUMBER(9) NOT NULL,
+    pessoa_cod_pessoa NUMBER(9) NOT NULL,
+    cod_usuario       VARCHAR2(20) NOT NULL,
+    status_usuario    CHAR(1 CHAR) NOT NULL,
+    tipo_usuario      VARCHAR2(10 CHAR) NOT NULL,
+    data_registro     DATE NOT NULL,
+    senha_usuario     VARCHAR2(35 CHAR) NOT NULL
+);
+
+CREATE UNIQUE INDEX usuario__idx ON
+    usuario (
+        pessoa_cod_pessoa
+    ASC );
+
+ALTER TABLE usuario ADD CONSTRAINT usuario_pk PRIMARY KEY ( id_usuario );
+
+CREATE TABLE vaga (
+    id_vaga                      NUMBER(9) NOT NULL,
+    vaga_categoria_cod_categoria NUMBER(6) NOT NULL,
+    status_vaga                  VARCHAR2(15) NOT NULL
+);
+
+ALTER TABLE vaga ADD CONSTRAINT vaga_pk PRIMARY KEY ( id_vaga );
+
+CREATE TABLE vaga_categoria (
+    cod_categoria  NUMBER(6) NOT NULL,
+    nome_categoria VARCHAR2(40) NOT NULL
+);
+
+ALTER TABLE vaga_categoria ADD CONSTRAINT vaga_categoria_pk PRIMARY KEY ( cod_categoria );
+
+ALTER TABLE bairro
+    ADD CONSTRAINT bairro_cidade_fk FOREIGN KEY ( cidade_cod_cidade )
+        REFERENCES cidade ( cod_cidade );
+
+ALTER TABLE candidato_atributos
+    ADD CONSTRAINT cand_atrib_atributos_nome_fk FOREIGN KEY ( atributos_nome_cod_atributo )
+        REFERENCES atributos_nome ( cod_atributo );
+
+ALTER TABLE candidato_atributos
+    ADD CONSTRAINT cand_atrib_candidato_fk FOREIGN KEY ( candidato_id_candidato )
+        REFERENCES candidato ( id_candidato );
+
+ALTER TABLE candidato
+    ADD CONSTRAINT candidato_pessoa_fk FOREIGN KEY ( pessoa_cod_pessoa )
+        REFERENCES pessoa ( cod_pessoa );
+
+ALTER TABLE cidade
+    ADD CONSTRAINT cidade_estado_fk FOREIGN KEY ( estado_cod_uf )
+        REFERENCES estado ( cod_uf );
+
+ALTER TABLE cnpj
+    ADD CONSTRAINT cnpj_empresa_fk FOREIGN KEY ( empresa_cod_empresa )
+        REFERENCES empresa ( cod_empresa );
+
+ALTER TABLE empresa
+    ADD CONSTRAINT empresa_pessoa_fk FOREIGN KEY ( pessoa_cod_pessoa )
+        REFERENCES pessoa ( cod_pessoa );
+
+ALTER TABLE pessoa_email
+    ADD CONSTRAINT pessoa_email_pessoa_fk FOREIGN KEY ( pessoa_cod_pessoa )
+        REFERENCES pessoa ( cod_pessoa );
+
+ALTER TABLE pessoa_endereco
+    ADD CONSTRAINT pessoa_endereco_bairro_fk FOREIGN KEY ( bairro_cod_bairro )
+        REFERENCES bairro ( cod_bairro );
+
+ALTER TABLE pessoa_endereco
+    ADD CONSTRAINT pessoa_endereco_pessoa_fk FOREIGN KEY ( pessoa_cod_pessoa )
+        REFERENCES pessoa ( cod_pessoa );
+
+ALTER TABLE pessoa_telefone
+    ADD CONSTRAINT pessoa_telefone_pessoa_fk FOREIGN KEY ( pessoa_cod_pessoa )
+        REFERENCES pessoa ( cod_pessoa );
+
+ALTER TABLE recrutador
+    ADD CONSTRAINT recrutador_pessoa_fk FOREIGN KEY ( pessoa_cod_pessoa )
+        REFERENCES pessoa ( cod_pessoa );
+
+ALTER TABLE usuario
+    ADD CONSTRAINT usuario_pessoa_fk FOREIGN KEY ( pessoa_cod_pessoa )
+        REFERENCES pessoa ( cod_pessoa );
+
+ALTER TABLE pessoa_vaga
+    ADD CONSTRAINT vaga_pessoa_pessoa_fk FOREIGN KEY ( pessoa_cod_pessoa )
+        REFERENCES pessoa ( cod_pessoa );
+
+ALTER TABLE pessoa_vaga
+    ADD CONSTRAINT vaga_pessoa_vaga_fk FOREIGN KEY ( vaga_id_vaga )
+        REFERENCES vaga ( id_vaga );
+
+ALTER TABLE vaga
+    ADD CONSTRAINT vaga_vaga_categoria_fk FOREIGN KEY ( vaga_categoria_cod_categoria )
+        REFERENCES vaga_categoria ( cod_categoria );

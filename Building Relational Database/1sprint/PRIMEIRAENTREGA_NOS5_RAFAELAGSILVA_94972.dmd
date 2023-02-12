@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="PRIMEIRAENTREGA_NOS5_RAFAELAGSILVA_94972" id="72D4DCBD-936C-0445-2B4C-E897A6EE752C" version="3.5">
+<createdBy>Gustavo</createdBy>
+<createdTime>2022-04-24 00:32:12 UTC</createdTime>
+<ownerDesignName>PRIMEIRAENTREGA_NOS5_RAFAELAGSILVA_94972</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>72D4DCBD-936C-0445-2B4C-E897A6EE752C</designId>
+</OSDM_Design>
