@@ -1,0 +1,20 @@
+.search input {
+    margin: 0 0 10px 0;
+    width: 400px;
+    background: #fafafa;
+    padding: 1rem;
+    outline: 0;
+    border: 1.2px solid #eee;
+    border-radius: 0.4rem;
+}
+.alignBnt{
+    display: flex;
+    justify-content: space-between;
+}
+.alignBnt button{
+    cursor: pointer;
+    margin: 0 0 40px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #8c42c3;
+}

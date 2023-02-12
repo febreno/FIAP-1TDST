@@ -1,0 +1,11 @@
+.form-btn{
+    margin: 1rem 0 1.5rem;
+    height: 3rem;
+    background-color: #8c42c3;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}

@@ -1,0 +1,97 @@
+/* menu */
+:root{
+    --bg:         #c3c6e0;/*background Web site*/
+    --bg-txt:     #8B898F;/*background in txt*/
+    --txt:        #191622;/*all txt*/
+    --menu:       #2a2830;/*side bar hover*/
+    --solid:      #191622;/*color solid*/
+    --solidp:     #a0a0a0;/*color txt inside solid*/
+    --links:      #f3f1f1;/*links 'a', 'btn'*/
+    --linksh:     #fff;/*links 'a' hover*/
+
+    --menu-bottom:#8c42c3;/*border down menu*/
+    --linksline:  #6E16E2;/*links line color*/
+    --linkslineb: #260057;/*links line color buton*/
+
+}
+[data-theme="dark"]{ /*.aparenciab:root*/
+    --bg:         #0e0b13;/*background Web site*/
+    --bg-txt:     #191622;/*background in txt*/
+    --txt:        #8B898F;/*all txt*/
+    --menu:       #0F0F0F;/*side bar hover*/
+    --solid:      #000;/*color solid*/
+    --solidp:     #a0a0a0;/*color txt inside solid*/
+    --links:      #fff;/*links 'a', 'btn'*/
+    --linksh:     #D1B5F5;/*links 'a' hover*/
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+a{
+    text-decoration: none;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main{
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    background: var(--bg);
+}
+h1,h2,h3,h4,h5, p{
+    color: var(--txt);
+}
+h1{
+    margin: 50px 20px 30px 20px;
+    text-align: center;
+    font-size: 30px;
+}
+h2{
+    margin: 80px 20px 50px 20px;
+    text-align: center;
+    font-size: 20px;
+}
+p{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: var(--links);
+}
+/* .steps p{
+    color: var(--links);
+} */
+a:hover{
+    transition: .5s;
+    color: var(--linksh);
+    text-decoration: underline var(--linksline);
+}
+@media screen and (max-width: 650px){
+    #content{
+        position: relative;
+        margin-left: 0;
+        size: 10px;
+    }
+    #menu{
+        width: 0;
+    }
+    footer p{
+        padding: 5px;
+    }
+}

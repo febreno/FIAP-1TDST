@@ -1,0 +1,17 @@
+/* .search{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+} */
+.search input{
+    margin: 0 0 20px 0;
+    width: 600px;
+    background: #fafafa;
+    padding: 1rem;
+    outline: 0;
+    border: 1.2px solid #eee;
+    border-radius: .4rem;
+}
+.search i{
+    font-size: 30px;
+}
