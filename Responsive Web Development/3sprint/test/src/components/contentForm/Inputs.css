@@ -1,0 +1,16 @@
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form-data form input{
+    background: #fafafa;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    outline: 0;
+    border: 1.2px solid #eee;
+    border-radius: .4rem;
+}
+.form-data input::placeholder{
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+}
