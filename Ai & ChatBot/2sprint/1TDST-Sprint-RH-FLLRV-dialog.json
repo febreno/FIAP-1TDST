@@ -1,0 +1,2017 @@
+{
+  "intents": [
+    {
+      "intent": "Agradecimento",
+      "examples": [
+        {
+          "text": "ajudou demais"
+        },
+        {
+          "text": "beleza robozudo, é nois"
+        },
+        {
+          "text": "beleza, valeu"
+        },
+        {
+          "text": "Intenção para detectar quando o consumidor agradece o chatbot"
+        },
+        {
+          "text": "mt obg"
+        },
+        {
+          "text": "mt obg mano"
+        },
+        {
+          "text": "obg"
+        },
+        {
+          "text": "obrigado"
+        },
+        {
+          "text": "obrigado pela ajuda"
+        },
+        {
+          "text": "ok, obrigado"
+        },
+        {
+          "text": "ok, thanks"
+        },
+        {
+          "text": "perfeito, muito obrigado"
+        },
+        {
+          "text": "show, valeu"
+        },
+        {
+          "text": "tamo junto"
+        }
+      ],
+      "description": "Reconhecer a intenção de agradecer"
+    },
+    {
+      "intent": "Ajuda",
+      "examples": [
+        {
+          "text": "chama um atendente de verdade"
+        },
+        {
+          "text": "chama um atendente por favor"
+        },
+        {
+          "text": "chame um assistente de verdade"
+        },
+        {
+          "text": "chame um humano"
+        },
+        {
+          "text": "não quero falar com robo, chame um humano"
+        },
+        {
+          "text": "não quero falar com um robo"
+        },
+        {
+          "text": "não quero falar com vc"
+        },
+        {
+          "text": "não quero falar com você, chame um atendente"
+        },
+        {
+          "text": "Preciso de ajuda"
+        },
+        {
+          "text": "preciso de ajuda de um humano"
+        },
+        {
+          "text": "preciso de assistencia com um atendente"
+        },
+        {
+          "text": "preciso falar com um atendente"
+        },
+        {
+          "text": "Preciso falar com um humano"
+        }
+      ],
+      "description": "Reconhecer a intenção de solicitação de ajuda"
+    },
+    {
+      "intent": "Cancelar",
+      "examples": [
+        {
+          "text": "desisti de ir"
+        },
+        {
+          "text": "esquece, não vou mais cadastrar a vaga"
+        },
+        {
+          "text": "me ajuda a cancelar a solicitação por favor"
+        },
+        {
+          "text": "me ajude a excluir um processo de recrutamento"
+        },
+        {
+          "text": "mudei de ideia, não vou fazer o cadastro agora"
+        },
+        {
+          "text": "não preciso mais desta solicitação"
+        },
+        {
+          "text": "não quero mais, cancelar"
+        },
+        {
+          "text": "não vou poder ir a consulta, posso remarcar?"
+        },
+        {
+          "text": "não vou realizar mais este processo, quero cancelar"
+        },
+        {
+          "text": "quero adiar a solicitação"
+        },
+        {
+          "text": "quero cancelar esse procedimento"
+        },
+        {
+          "text": "quero cancelar o processo"
+        },
+        {
+          "text": "quero excluir o processo seletivo"
+        },
+        {
+          "text": "quero excluir um processo seletivo"
+        },
+        {
+          "text": "troquei de opinião, não quero mais fazer o cadastro"
+        }
+      ],
+      "description": "Reconhecer a intenção de cancelar o processo"
+    },
+    {
+      "intent": "Criar_Processo_Selecao",
+      "examples": [
+        {
+          "text": "como faço para criar um processo seletivo"
+        },
+        {
+          "text": "criar processo seletivo"
+        },
+        {
+          "text": "desejo criar um processo seletivo"
+        },
+        {
+          "text": "desejo programar um processo seletivo"
+        },
+        {
+          "text": "gostaria de fazer um processo de seleção por favor"
+        },
+        {
+          "text": "Olá, tudo bem? gostaria de criar um processo de recrutamento"
+        },
+        {
+          "text": "quero abrir uma vaga para desenvolvedor"
+        },
+        {
+          "text": "Quero abrir um processo de seleção para uma vaga"
+        },
+        {
+          "text": "quero agendar a abertura de uma triagem de candidatos"
+        },
+        {
+          "text": "quero criar uma vaga de recrutamento"
+        },
+        {
+          "text": "tem como eu abrir uma vaga por aqui?"
+        },
+        {
+          "text": "você consegue abrir um processo de seleção por favor?"
+        },
+        {
+          "text": "vocês fazem criação de processo seletivo?"
+        }
+      ],
+      "description": "Intenção para reconhecer a vontade do recrutador de criar um processo seletivo"
+    },
+    {
+      "intent": "Editar_processo",
+      "examples": [
+        {
+          "text": "como cancelar um processo seletivo"
+        },
+        {
+          "text": "como editar o processo seletivo"
+        },
+        {
+          "text": "como eu faço para editar a vaga"
+        },
+        {
+          "text": "como faço para excluir ou editar meu processo"
+        },
+        {
+          "text": "como faço para mudar o status do processo de seleção?"
+        },
+        {
+          "text": "necessito alterar o salário da vaga"
+        },
+        {
+          "text": "preciso alterar o status e algumas informações da seleção"
+        },
+        {
+          "text": "preciso alterar o tipo de profissional do processo seletivo"
+        },
+        {
+          "text": "preciso alterar todas as informações sobre o processo seletivo"
+        },
+        {
+          "text": "preciso mudar informações do processo seletivo"
+        },
+        {
+          "text": "quero mudar algumas informações da vaga"
+        },
+        {
+          "text": "quero mudar o processo seletivo, como eu faço?"
+        },
+        {
+          "text": "quero mudar o título da vaga"
+        }
+      ],
+      "description": "Para reconhecer intenção de editar um processo seletivo"
+    },
+    {
+      "intent": "Horário_Funcionamento",
+      "examples": [
+        {
+          "text": "até que dia vocês estarão prestando ajuda?"
+        },
+        {
+          "text": "até que horas possuem atendentes?"
+        },
+        {
+          "text": "horário de funcionamento"
+        },
+        {
+          "text": "no natal vocês conseguem resolver meu problema?"
+        },
+        {
+          "text": "quais os horários que o suporte etá online?"
+        },
+        {
+          "text": "qual o horário de atendimento do site?"
+        },
+        {
+          "text": "qual o horário de funcionamento"
+        },
+        {
+          "text": "quando vocês começam a atender?"
+        },
+        {
+          "text": "quando vocês param de atender?"
+        },
+        {
+          "text": "quando vocês vão me ajudar?"
+        },
+        {
+          "text": "que dia vocês prestam suporte?"
+        },
+        {
+          "text": "vocês atendem 24 horas?"
+        },
+        {
+          "text": "vocês possuem atendentes final de semana?"
+        },
+        {
+          "text": "voces prestam suporte feriado?"
+        }
+      ],
+      "description": "Para reconhecer a intenção de saber o horário do site de recrutamento"
+    },
+    {
+      "intent": "Listagem_Processos",
+      "examples": [
+        {
+          "text": "faça a listagem de todas as vagas em aberto"
+        },
+        {
+          "text": "liste todos os processos seletivos em aberto"
+        },
+        {
+          "text": "me mostra os processos que eu publiquei"
+        },
+        {
+          "text": "me mostre o processo seletivo que eu abri"
+        },
+        {
+          "text": "me mostre todos os processos de recrutamento que estão em andamento"
+        },
+        {
+          "text": "quais processos seletivos estão em andamento?"
+        },
+        {
+          "text": "quais são as seleções que estão em andamento?"
+        },
+        {
+          "text": "quais são as vagas que eu tenho em aberto?"
+        },
+        {
+          "text": "quais são as vagas que foram publicadas por mim?"
+        },
+        {
+          "text": "quais são os processos seletivos que eu tenho?"
+        },
+        {
+          "text": "quantas vagas estão em aberto?"
+        },
+        {
+          "text": "quantos procesos seletivos estão em abertos?"
+        }
+      ],
+      "description": "Para reconhecer a intenção de saber a lista de processos em aberto"
+    },
+    {
+      "intent": "Saudações",
+      "examples": [
+        {
+          "text": "Boa noite, tudo bem?"
+        },
+        {
+          "text": "Boa tarde, como vai?"
+        },
+        {
+          "text": "Bom dia, como você está?"
+        },
+        {
+          "text": "fala, deboa?"
+        },
+        {
+          "text": "Oi boa tarde"
+        },
+        {
+          "text": "Oi bot"
+        },
+        {
+          "text": "Oie"
+        },
+        {
+          "text": "Oi, tem alguém ai?"
+        },
+        {
+          "text": "Oi tem alguém pra me ajudar?"
+        },
+        {
+          "text": "Olá"
+        },
+        {
+          "text": "Olá, tudo bem?"
+        },
+        {
+          "text": "opa, tranquilo?"
+        },
+        {
+          "text": "Salve bot"
+        }
+      ],
+      "description": "Intenção para identificar saudações"
+    },
+    {
+      "intent": "Tchau",
+      "examples": [
+        {
+          "text": "adeus"
+        },
+        {
+          "text": "até breve"
+        },
+        {
+          "text": "até logo"
+        },
+        {
+          "text": "até mais"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "ciao"
+        },
+        {
+          "text": "depois eu vejo isso, até amanhã"
+        },
+        {
+          "text": "goodbye"
+        },
+        {
+          "text": "tchau"
+        },
+        {
+          "text": "tchau amigo"
+        },
+        {
+          "text": "tchau bot"
+        },
+        {
+          "text": "xau"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Tipos_de_Profissoes",
+      "examples": [
+        {
+          "text": "dá para criar uma vaga para recursos humanos?"
+        },
+        {
+          "text": "eu consigo criar um processo seletivo para desenvolvedor?"
+        },
+        {
+          "text": "eu consigo criar um processo seletivo para qualquer tipo de vaga?"
+        },
+        {
+          "text": "para quais profissões eu posso criar o processo seletivo"
+        },
+        {
+          "text": "posso cadastrar um processo para outro tipo de profissão?"
+        },
+        {
+          "text": "posso cadastrar vaga para que profissão?"
+        },
+        {
+          "text": "quais as profissões estão disponiveis para cadastrar as vagas"
+        },
+        {
+          "text": "quais as vagas aceitas para criação no site"
+        },
+        {
+          "text": "quais profissoes são aceitas no site"
+        },
+        {
+          "text": "quais são as vagas suportadas para cadastro?"
+        },
+        {
+          "text": "quais tipos de profissionais são aceitos na hora de criar o processo?"
+        },
+        {
+          "text": "vocês conseguem criar processo seletivo para quais tipos de vaga?"
+        },
+        {
+          "text": "vocês vão aceitar mais tipos de vagas no site?"
+        }
+      ],
+      "description": "Reconhecer a intenção de saber os tipos de profissões disponíveis para criar o processo seletivo"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "\\b[A-Za-z0-9._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,}\\b"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "profissao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Cientista de Dados",
+          "synonyms": [
+            "data scientist"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Desenvolvedor Back-end",
+          "synonyms": [
+            "back-end",
+            "backend"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Desenvolvedor Front-end",
+          "synonyms": [
+            "front",
+            "front-end",
+            "frontend"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Desenvolvedor FullStack",
+          "synonyms": [
+            "Fullstack"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Desenvolvedor Mobile",
+          "synonyms": [
+            "dev mobile"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "senioridade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Júnior",
+          "synonyms": [
+            "jr"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pleno",
+          "synonyms": [
+            "pl"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sênior",
+          "synonyms": [
+            "Sr"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sim-nao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "não",
+          "synonyms": [
+            "n",
+            "não quero",
+            "negativo",
+            "nem",
+            "sqn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "beleza",
+            "claro",
+            "de acordo",
+            "ok",
+            "positivo",
+            "s",
+            "ss",
+            "yes"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tecnologia",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "C#",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "C++",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Golang",
+          "synonyms": [
+            "go",
+            "go!"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Java",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "JavaScript",
+          "synonyms": [
+            "js"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kotlin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Node.js",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Python",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ruby",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "SASS e CSS",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "telefone",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "celular",
+          "patterns": [
+            "^([0-9]{2} [0-9]{5}-[0-9]{4})$",
+            "^([0-9]{2} [0-9]{5} [0-9]{4})$",
+            "^(\\([0-9]{2}\\) [0-9]{5} [0-9]{4})$",
+            "^(\\([0-9]{2}\\) [0-9]{5}-[0-9]{4})$",
+            "^([0-9]{2} [0-9]{9})$"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, sou o assistente virtual do Workfy, prazer em te ver por aqui :)\nAinda estamos em versão beta, portanto nossas funções estão um pouco limitadas, atualmente consigo te ajudar com:\n"
+              },
+              {
+                "text": "1. Criar Processo Seletivo;\n"
+              },
+              {
+                "text": "2. Vagas Suportadas;\n"
+              },
+              {
+                "text": "3. Horário de Funcionamento;\n"
+              },
+              {
+                "text": "4. Como cancelar um processo seletivo;\n"
+              },
+              {
+                "text": "5. Como editar um processo seletivo;\n"
+              },
+              {
+                "text": "6. Como ver os processos seletivos em aberto;\n"
+              },
+              {
+                "text": "Em que posso te ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode reformular por favor?"
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi, você pode reformular por favor?."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_2_1650249692083",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1650243205729",
+      "context": {
+        "sim_nao_sim": "@sim-nao:sim"
+      },
+      "conditions": "@sim-nao:sim",
+      "event_name": "input",
+      "dialog_node": "handler_10_1650243205750"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1650243287572",
+      "context": {
+        "profissao": "@profissao"
+      },
+      "conditions": "@profissao",
+      "event_name": "input",
+      "dialog_node": "handler_10_1650243287573"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1650244245055",
+      "context": {
+        "data_abertura": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_10_1650244245057"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1653239141817",
+      "context": {
+        "data_fechamento": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_10_1653239141819"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não entendi, por favor digite no padrão: 11 12345-6789"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_6_1650245315052",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "",
+      "event_name": "nomatch",
+      "dialog_node": "handler_1_1653241443141",
+      "previous_sibling": "handler_6_1650245315055"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Desculpa, não entendi"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_1_1653253171808",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_1_1653259384001",
+      "previous_sibling": "handler_8_1653253171809"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Para qual tipo de desenvolvedor você quer cadastrar a vaga? Selecione:",
+            "options": [
+              {
+                "label": "Desenvolvedor Front-end",
+                "value": {
+                  "input": {
+                    "text": "Desenvolvedor Front-end"
+                  }
+                }
+              },
+              {
+                "label": "Desenvolvedor Back-end",
+                "value": {
+                  "input": {
+                    "text": "Desenvolvedor Back-end"
+                  }
+                }
+              },
+              {
+                "label": "Desenvolvedor FullStack",
+                "value": {
+                  "input": {
+                    "text": "Desenvolvedor FullStack"
+                  }
+                }
+              },
+              {
+                "label": "Desenvolvedor Mobile",
+                "value": {
+                  "input": {
+                    "text": "Desenvolvedor Mobile"
+                  }
+                }
+              },
+              {
+                "label": "Cientista de Dados",
+                "value": {
+                  "input": {
+                    "text": "Cientista de Dados"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_9_1650243287572",
+      "context": {},
+      "event_name": "focus",
+      "dialog_node": "handler_3_1650243287573",
+      "previous_sibling": "handler_10_1650243287573"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Formato de e-mail inválido!"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_8_1650243456915",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_3_1653259476734",
+      "previous_sibling": "handler_5_1650243456916"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você não pode colocar uma data que já passou!"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_2_1653239141817",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "@sys-date.before(now())",
+      "event_name": "filled",
+      "dialog_node": "handler_3_1653260180407",
+      "previous_sibling": "handler_6_1653259458773"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vejo que você precisa de ajuda, vou te transferir para um analista humano."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_10_1650229028087",
+      "context": {
+        "cliente_precisa_ajuda": true
+      },
+      "next_step": {
+        "behavior": "skip_all_slots"
+      },
+      "conditions": "#Ajuda",
+      "event_name": "generic",
+      "dialog_node": "handler_4_1650246826870",
+      "previous_sibling": "handler_5_1650246342921"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não é possível iniciar um processo seletivo para uma data que já passou"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_8_1650244245055",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "@sys-date.before(now())",
+      "event_name": "filled",
+      "dialog_node": "handler_4_1653241002958",
+      "previous_sibling": "handler_6_1650244245057"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Digite o email que você deseja receber as notificações de candidaturas?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_8_1650243456915",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1650243456916",
+      "previous_sibling": "handler_8_1650243456916"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem, cancelei a sua solicitação."
+              },
+              {
+                "text": "Ok, cancelei sua solicitação"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_10_1650229028087",
+      "context": {
+        "email": null,
+        "salario": null,
+        "telefone": null,
+        "profissao": null,
+        "senioridade": null,
+        "sim_nao_sim": null,
+        "data_abertura": null,
+        "data_fechamento": null,
+        "cliente_cancelou": true
+      },
+      "next_step": {
+        "behavior": "skip_all_slots"
+      },
+      "conditions": "#Cancelar",
+      "event_name": "generic",
+      "dialog_node": "handler_5_1650246342921"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você não selecionou uma opção válida!"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1650243287572",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "conditions": "",
+      "event_name": "nomatch",
+      "dialog_node": "handler_5_1653258712977",
+      "previous_sibling": "handler_3_1650243287573"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Qual o nível de senioridade da vaga? Selecione:",
+            "options": [
+              {
+                "label": "1. Júnior",
+                "value": {
+                  "input": {
+                    "text": "Júnior"
+                  }
+                }
+              },
+              {
+                "label": "2. Pleno",
+                "value": {
+                  "input": {
+                    "text": "Pleno"
+                  }
+                }
+              },
+              {
+                "label": "3. Sênior",
+                "value": {
+                  "input": {
+                    "text": "Sênior"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_5_1650243483786",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1650243483786",
+      "previous_sibling": "handler_8_1650243483786"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para qual dia você quer iniciar o processo seletivo?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_8_1650244245055",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1650244245057",
+      "previous_sibling": "handler_10_1650244245057"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Digite o seu celular para entrarmos em contato caso ocorra algum imprevisto com o processo seletivo"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_6_1650245315052",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1650245315055",
+      "previous_sibling": "handler_9_1650245315055"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Data inválida, digite no modelo DD/MM/AAAA"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_2_1653239141817",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_6_1653259458773",
+      "previous_sibling": "handler_7_1653239141819"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual a data de encerramento do processo seletivo?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1653239141817",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1653239141819",
+      "previous_sibling": "handler_10_1653239141819"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1653253171808",
+      "context": {
+        "salario": "@sys-currency"
+      },
+      "conditions": "@sys-currency",
+      "event_name": "input",
+      "dialog_node": "handler_7_1653253171809"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você não selecionou uma opção válida!"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_5_1650243483786",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1653259129362",
+      "previous_sibling": "handler_6_1650243483786"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A tecnologia que você escolheu não é suportada pelo nosso site ainda!"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_1_1653256741492",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1653259347145",
+      "previous_sibling": "handler_9_1653256741494"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_7_1653259962825",
+      "event_name": "input",
+      "dialog_node": "handler_7_1653259962835"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal, vou fazer algumas perguntas para criarmos o processo, ok?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_8_1650243205729",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1650243205750",
+      "previous_sibling": "handler_10_1650243205750"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1650243456915",
+      "context": {
+        "email": "@email.literal"
+      },
+      "conditions": "@email",
+      "event_name": "input",
+      "dialog_node": "handler_8_1650243456916"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1650243483786",
+      "context": {
+        "senioridade": "@senioridade"
+      },
+      "conditions": "@senioridade",
+      "event_name": "input",
+      "dialog_node": "handler_8_1650243483786"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual o salário para esta vaga?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_1_1653253171808",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1653253171809",
+      "previous_sibling": "handler_7_1653253171809"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1653256741492",
+      "context": {
+        "tecnologia": "@tecnologia"
+      },
+      "conditions": "@tecnologia",
+      "event_name": "input",
+      "dialog_node": "handler_8_1653256741494"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1653259962825",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1653259962835",
+      "previous_sibling": "handler_7_1653259962835"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1650245315052",
+      "context": {
+        "telefone": "@telefone.literal"
+      },
+      "conditions": "@telefone",
+      "event_name": "input",
+      "dialog_node": "handler_9_1650245315055"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Qual será a principal tecnologia utilizada na vaga?",
+            "options": [
+              {
+                "label": "Java",
+                "value": {
+                  "input": {
+                    "text": "Java"
+                  }
+                }
+              },
+              {
+                "label": "JavaScript",
+                "value": {
+                  "input": {
+                    "text": "JavaScript"
+                  }
+                }
+              },
+              {
+                "label": "Node.js",
+                "value": {
+                  "input": {
+                    "text": "Node.js"
+                  }
+                }
+              },
+              {
+                "label": "SASS e CSS",
+                "value": {
+                  "input": {
+                    "text": "SASS e CSS"
+                  }
+                }
+              },
+              {
+                "label": "Golang",
+                "value": {
+                  "input": {
+                    "text": "Golang"
+                  }
+                }
+              },
+              {
+                "label": "C++",
+                "value": {
+                  "input": {
+                    "text": "C++"
+                  }
+                }
+              },
+              {
+                "label": "C#",
+                "value": {
+                  "input": {
+                    "text": "C#"
+                  }
+                }
+              },
+              {
+                "label": "Ruby",
+                "value": {
+                  "input": {
+                    "text": "Ruby"
+                  }
+                }
+              },
+              {
+                "label": "Python",
+                "value": {
+                  "input": {
+                    "text": "Python"
+                  }
+                }
+              },
+              {
+                "label": "Kotlin",
+                "value": {
+                  "input": {
+                    "text": "Kotlin"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_1_1653256741492",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1653256741494",
+      "previous_sibling": "handler_8_1653256741494"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Data inválida, digite no modelo DD/MM/AAAA"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_8_1650244245055",
+      "next_step": {
+        "behavior": "reprompt"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_9_1653259418735",
+      "previous_sibling": "handler_4_1653241002958"
+    },
+    {
+      "type": "frame",
+      "title": "Criar Processo Seletivo",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Criar_Processo_Selecao",
+      "dialog_node": "node_10_1650229028087",
+      "previous_sibling": "node_9_1650224525073"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Valeu, sempre um prazer ajudar. Se precisar de alguma coisa só chamar."
+              },
+              {
+                "text": "Por nada. Caso precise de algo só me chamar."
+              },
+              {
+                "text": "Tamo junto. Se precisar de ajuda com mais alguma coisa estou aqui."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Agradecimento",
+      "dialog_node": "node_1_1650225470191",
+      "previous_sibling": "node_9_1650245639980"
+    },
+    {
+      "type": "standard",
+      "title": "Tchau",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Até mais, precisando de mais alguma coisa só me chamar."
+              },
+              {
+                "text": "Tchau, se precisar de algo tô aqui."
+              },
+              {
+                "text": "Adeus, tamo junto."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Tchau",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1650249692083",
+      "previous_sibling": "node_1_1650225470191"
+    },
+    {
+      "type": "standard",
+      "title": "Editar Processo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para fazer qualquer tipo de alteração ou exclusão de processos seletivos, siga os seguintes passos:\n"
+              },
+              {
+                "text": "1° Acesse o site: https://febreno.github.io/workfy/login.html\n"
+              },
+              {
+                "text": "2° Faça o seu login;\n"
+              },
+              {
+                "text": "3° Vá na aba \"Menu\";\n"
+              },
+              {
+                "text": "4° Clique no botão \"Gerenciar processos seletivos\";\n"
+              },
+              {
+                "text": "5° Escolha o processo que deseja editar.\n"
+              },
+              {
+                "text": "Se precisar de mais alguma coisa só me chamar :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {},
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#Cancelar || #Editar_processo",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1650247927901",
+      "previous_sibling": "node_10_1650229028087"
+    },
+    {
+      "type": "standard",
+      "title": "Vagas Suportadas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Como estamos na versão beta, atualmente estamos cadastrando processos de somente 5 tipos de profissões, que são:\n"
+              },
+              {
+                "text": "1. Desenvolvedor Front-End;\n"
+              },
+              {
+                "text": "2. Desenvolvedor Back-end;\n"
+              },
+              {
+                "text": "3. Desenvolvedor Fullstack;\n"
+              },
+              {
+                "text": "4. Desenvolvedor Mobile;\n"
+              },
+              {
+                "text": "5. Cientista de Dados.\n"
+              },
+              {
+                "text": "Ajudo em mais alguma coisa?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#Tipos_de_Profissoes",
+      "dialog_node": "node_6_1650248547200",
+      "previous_sibling": "node_8_1650247460402"
+    },
+    {
+      "type": "standard",
+      "title": "Horário Funcionamento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O nosso horário de atendimento é das 7:00 às 19:00, de Segunda a Sábado\n\nPara assuntos urgentes, ligue para nossa central de suporte:\n\n(11) 1234-5678"
+              },
+              {
+                "text": "Nós atendemos de Segunda a Sábado, das 7:00 às 19:00\n\nPara assuntos urgentes, ligue para nossa central de suporte:\n\n(11) 1234-5678"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Horário_Funcionamento",
+      "dialog_node": "node_8_1650247460402",
+      "previous_sibling": "node_6_1650247927901"
+    },
+    {
+      "type": "standard",
+      "title": "Falar com humano",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vejo que você precisa de ajuda, vou te transferir para um analista humano.\n"
+              },
+              {
+                "text": "[Usar o sistema para transferir para um agente humano]"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {},
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#Ajuda",
+      "dialog_node": "node_8_1653259879465",
+      "previous_sibling": "node_6_1650248547200"
+    },
+    {
+      "type": "standard",
+      "title": "Saudações",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Saudações",
+      "dialog_node": "node_9_1650224525073",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Listagem Processos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Infelizmente não consigo listar todos os processos seletivos por aqui, para verificar todos os seus processos em aberto, entre no seu Dashboard no site:\n \nhttps://febreno.github.io/workfy/login.html"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Listagem_Processos",
+      "dialog_node": "node_9_1650245639980",
+      "previous_sibling": "node_8_1653259879465"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Posso te ajudar com mais alguma coisa?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1650229028087",
+      "conditions": "$cliente_cancelou",
+      "dialog_node": "response_2_1650247217767",
+      "previous_sibling": "response_6_1650247156556"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_6_1650247927901",
+      "context": {},
+      "disabled": true,
+      "dialog_node": "response_2_1653254322313"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vejo que você precisa de ajuda, vou te transferir para um analista humano."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1653259879465",
+      "context": {},
+      "disabled": true,
+      "conditions": "$cliente_precisa_ajuda",
+      "dialog_node": "response_3_1653259989817"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Processo seletivo criado com Sucesso! Confira as informações:\n"
+              },
+              {
+                "text": "Tipo de profissional: $profissao\n"
+              },
+              {
+                "text": "Senioridade: $senioridade\n"
+              },
+              {
+                "text": "Principal tecnologia a ser usada: $tecnologia\n"
+              },
+              {
+                "text": "Salário: $salario reais\n"
+              },
+              {
+                "text": "Data de abertura do processo: $data_abertura\n"
+              },
+              {
+                "text": "Data de fechamento do processo: $data_fechamento\n"
+              },
+              {
+                "text": "E-mail: $email\n"
+              },
+              {
+                "text": "Seu telefone (não será compartilhado com os candidatos): $telefone\n"
+              },
+              {
+                "text": "Para adicionar a descrição detalhada da vaga, acesse o seu menu \"Dashboard\" no site: https://www.asd.com.br"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1650229028087",
+      "conditions": "true",
+      "dialog_node": "response_5_1650247281006",
+      "previous_sibling": "response_2_1650247217767"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, bom dia, como posso te ajudar?"
+              },
+              {
+                "text": "Olá, bom dia, no que posso te auxiliar?"
+              },
+              {
+                "text": "Olá, bom dia, em que posso te ajudar hoje?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1650224525073",
+      "context": {},
+      "conditions": "now().after('04:00:00') && now().before('11:59:59')",
+      "dialog_node": "response_6_1650224774427"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "[Usar o sistema para transferir para um agente humano]"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1650229028087",
+      "context": {},
+      "conditions": "$cliente_precisa_ajuda",
+      "dialog_node": "response_6_1650247156556",
+      "previous_sibling": "handler_4_1650246826870"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, boa tarde, como posso te ajudar?"
+              },
+              {
+                "text": "Oi, boa noite, em que posso ajudar?"
+              },
+              {
+                "text": "Oie boa noite, no que posso te auxiliar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1650224525073",
+      "conditions": "now().after('12:00:00') && now().before('17:59:59')",
+      "dialog_node": "response_7_1650224784940",
+      "previous_sibling": "response_6_1650224774427"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, boa noite, como posso te ajudar?"
+              },
+              {
+                "text": "Oi, boa noite, em que posso ajudar?"
+              },
+              {
+                "text": "Oi, boa noite, no que posso ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_9_1650224525073",
+      "conditions": "now().after('18:00:00')",
+      "dialog_node": "response_8_1650224786941",
+      "previous_sibling": "response_7_1650224784940"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, em que posso te ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1650224525073",
+      "dialog_node": "response_9_1650224793762",
+      "previous_sibling": "response_8_1650224786941"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1650229028087",
+      "variable": "$salario",
+      "dialog_node": "slot_1_1653253171808",
+      "previous_sibling": "slot_1_1653256741492"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1650229028087",
+      "variable": "$tecnologia",
+      "dialog_node": "slot_1_1653256741492",
+      "previous_sibling": "slot_5_1650243483786"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1650229028087",
+      "variable": "$data_fechamento",
+      "dialog_node": "slot_2_1653239141817",
+      "previous_sibling": "slot_8_1650244245055"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1650229028087",
+      "variable": "$senioridade",
+      "dialog_node": "slot_5_1650243483786",
+      "previous_sibling": "slot_9_1650243287572"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1650229028087",
+      "variable": "$telefone",
+      "dialog_node": "slot_6_1650245315052",
+      "previous_sibling": "slot_8_1650243456915"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1653259879465",
+      "dialog_node": "slot_7_1653259962825",
+      "previous_sibling": "response_3_1653259989817"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1650229028087",
+      "variable": "$sim_nao_sim",
+      "dialog_node": "slot_8_1650243205729",
+      "previous_sibling": "response_5_1650247281006"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1650229028087",
+      "variable": "$email",
+      "dialog_node": "slot_8_1650243456915",
+      "previous_sibling": "slot_2_1653239141817"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1650229028087",
+      "variable": "$data_abertura",
+      "dialog_node": "slot_8_1650244245055",
+      "previous_sibling": "slot_1_1653253171808"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1650229028087",
+      "variable": "$profissao",
+      "dialog_node": "slot_9_1650243287572",
+      "previous_sibling": "slot_8_1650243205729"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "nlp": {
+      "model": "baseline"
+    },
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v1"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "1TDST-Sprint-RH-FLLRV",
+  "language": "pt-br",
+  "description": ""
+}
