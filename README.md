@@ -1,7 +1,7 @@
 # FIAP 1TDST
 ADS - Analise e desenvolvimento de sistemas
 <br/>
-## AULAS
+## Projetos
 AI E CHATBOT(Inteligencia Artificial)
 - Miguel Bozer da Silva
 </br>
